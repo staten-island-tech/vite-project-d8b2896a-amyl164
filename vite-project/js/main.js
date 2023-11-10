@@ -2,6 +2,9 @@ import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
+import "../css/style.css"; 
+/* import {cuisine, price} from "./cuisine";
+console.log(cuisine, price) */
 
 document.querySelector('#app').innerHTML = `
   <div>
