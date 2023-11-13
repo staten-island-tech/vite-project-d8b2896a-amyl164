@@ -173,8 +173,9 @@ h4{
   margin-top: 0rem;
 }
 .btn {
-  background-color: gray;
+  background-color: white;
     border-radius: 10px;
+    border-color: black;
     font-size: 3rem;
 }
 
