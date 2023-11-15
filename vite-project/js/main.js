@@ -6,3 +6,4 @@ console.log(cuisine, price) */
 
 const printchinese = category.filter((category)=>category.cuisine ==="chinese").forEach((category)=> console.log(category.cuisine)); 
 
+const printjapanese = category.filter((category)=>category.cuisine ==="japanese").forEach((category)=> console.log(category.cuisine)); 
