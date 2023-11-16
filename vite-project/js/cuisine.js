@@ -56,22 +56,40 @@ const category = [
       pic: "https://th.bing.com/th/id/R.1cc3f0d212fcb9ee4f82d5cd2c10d4dd?rik=jGCISxfGqwImsA&pid=ImgRaw&r=0",
     },
     {
-      name: "Gnocchi",
+      name: "Chicken tikka masala",
+      price: "$$",
+      cuisine: "indian",
+      pic: "https://www.thecookingcollective.com.au/wp-content/uploads/2021/08/finished-tikka-masala-with-vegetables-and-roti-bread.jpg",
+    },
+    {
+      name: "Aloo gobi",
       price: "$",
+      cuisine: "indian",
+      pic: "https://niksharmacooks.com/wp-content/uploads/2022/11/AlooGobiDSC_5234.jpg",
+    },
+    {
+      name: "Chana masala",
+      price: "$$",
+      cuisine: "indian",
+      pic: "https://ministryofcurry.com/wp-content/uploads/2023/06/chana-masala_-5.jpg",
+    },
+    {
+      name: "Gnocchi",
+      price: "$$",
       cuisine: "italian",
-      pic: "https://th.bing.com/th/id/R.a5e94af64e5c726e8634370ce9f128cd?rik=IgadDJbWDqxE6g&pid=ImgRaw&r=0",
+      pic: "https://www.marthastewart.com/thmb/AdbLwcdFLpcsvW1bah2OuLij55o=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/336461-gnocchi-with-tomato-sauce-hero-04-1fe29843b76a4f0ab2ebc226de2723a0.jpg",
     },
     {
       name: "Pizza",
-      price: "$$",
+      price: "$",
       cuisine: "italian",
-      pic: "https://i.pinimg.com/originals/8b/a1/55/8ba155eed30b2134d48826e09ca5c5bd.jpg",
+      pic: "https://st3.idealista.it/cms/archivie/2022-10/media/image/aurelien-lemasson-theobald-x00czbt4dfk-unsplash.jpg?VersionId=rsplPfGIYIR.IpPJNnTUNNPRTooJvUq.&fv=lKbIgfCL",
     },
     {
       name: "Risotto",
       price: "$$",
       cuisine: "italian",
-      pic: "https://th.bing.com/th/id/R.1cc3f0d212fcb9ee4f82d5cd2c10d4dd?rik=jGCISxfGqwImsA&pid=ImgRaw&r=0",
+      pic: "https://www.mealsbymolly.com/wp-content/uploads/2020/05/Risotto2.jpg",
     },
   ];
 
