@@ -122,9 +122,6 @@ html,
   justify-content: space-around
 
 }
-#form {
-    font-size: 40px;
-}
 
 .header {
     display: flex;

@@ -1,3 +1,5 @@
+import { category } from "./cuisine";
+
 const DOMSelectors ={
     container: document.querySelector(".container"),
     card: document.querySelector(".card"),
@@ -5,10 +7,13 @@ const DOMSelectors ={
     button: document.querySelector(".btn"),
     name: document.querySelector(".name"),
     money: document.querySelector(".money"),
+
 };
 
-function poop (){
+export{DOMSelectors}
+
+/* function poop (){
     DOMSelectors.form.addEventListener("click", function(event){
         event.preventDefault();
         
-    }};
+    }}; */
