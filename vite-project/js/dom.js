@@ -1,4 +1,5 @@
-import { category } from "./cuisine";
+import { categories } from "./cuisine";
+
 
 const DOMSelectors ={
     container: document.querySelector(".container"),

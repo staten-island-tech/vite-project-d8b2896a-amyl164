@@ -1,4 +1,4 @@
-const category = [
+let categories = [
     {
       name: "Cantonese Char Siu",
       price: "$",
@@ -91,4 +91,4 @@ const category = [
     },
   ];
 
-export {category};
+export {categories};

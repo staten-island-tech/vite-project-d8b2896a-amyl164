@@ -1,25 +1,45 @@
 import "../css/style.css"
-import {category} from './cuisine'
+import {categories} from './cuisine'
 import { DOMSelectors } from "./dom";
 /* import {cuisine, price} from "./cuisine";
 console.log(cuisine, price) */
 
-function card (){
-    category.forEach((object) => {const poop = 
-    `<div id="container">
-    <div id="card">
+function poopy (){
+    categories.forEach((object) => {const poop = 
+    `<div class="container">
+    <div class="card">
         <h3 class = "name">${object.name}</h3>
         <img src="${object.pic}" class="cardimg">
         <h4 class = ${object.money}>Price</h4> 
     </div>  
 </div>`
-
 DOMSelectors.container.insertAdjacentHTML(
     "beforeend",
     poop
     
 )})};
-card()
+poopy()
+
+DOMSelectors.button.addEventListener("click", () => {
+    const printchinese = categories.filter((category) => category.cuisine === "chinese").forEach((category));
+    poopy(printchinese);
+});
+
+// function divCreator(){
+//     DOMSelectors.container.insertAdjacentHTML(
+//         "afterbegin",
+        
+//         function insert(){
+//             categories.forEach((category) => {const poop = 
+//                 `<div id="container">
+//                     <h3 class = "name">${category.name}</h3>
+//                     <img src="${category.pic}" class="cardimg">
+//                     <h4 class = ${category.money}>Price</h4>  
+//             </div>`
+//         })},
+//         insert()
+//     )}
+//     divCreator()
 
 
 
