@@ -5,9 +5,10 @@ const DOMSelectors ={
     container: document.querySelector(".container"),
     card: document.querySelector(".card"),
     cardimg: document.querySelector(".cardimg"),
-    button: document.querySelector(".btn"),
     name: document.querySelector(".name"),
     money: document.querySelector(".money"),
+    button: document.querySelectorAll(".btn"),
+
 
 };
 

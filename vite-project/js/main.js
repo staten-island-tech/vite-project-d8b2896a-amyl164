@@ -5,12 +5,12 @@ import { DOMSelectors } from "./dom";
 console.log(cuisine, price) */
 
 function poopy (){
-    categories.forEach((object) => {const poop = 
+    categories.forEach((x) => {const poop = 
     `<div class="container">
     <div class="card">
-        <h3 class = "name">${object.name}</h3>
-        <img src="${object.pic}" class="cardimg">
-        <h4 class = ${object.money}>Price</h4> 
+        <h3 class = "name">${x.name}</h3>
+        <img src="${x.pic}" class="cardimg">
+        <h4 class = ${x.money}>Price</h4> 
     </div>  
 </div>`
 DOMSelectors.container.insertAdjacentHTML(
@@ -20,10 +20,33 @@ DOMSelectors.container.insertAdjacentHTML(
 )})};
 poopy()
 
-DOMSelectors.button.addEventListener("click", () => {
-    const printchinese = categories.filter((category) => category.cuisine === "chinese").forEach((category));
-    poopy(printchinese);
-});
+DOMSelectors.button.addEventListener("click", function(event){
+    event.preventDefault();
+    function clearfields(){
+        document.container.innerHTML="";
+    }
+    clearfields()
+    const printchinese = categories.filter((category) => category.cuisine === "chinese").forEach((category)=> 
+    {const poop = 
+        `<div class="container">
+        <div class="card">
+            <h3 class = "name">${category.name}</h3>
+            <img src="${category.pic}" class="cardimg">
+            <h4 class = ${category.money}>Price</h4> 
+        </div>  
+    </div>`
+    DOMSelectors.container.insertAdjacentHTML(
+        "beforeend",
+        poop,
+        printchinese
+        )})});
+        
+    
+
+
+// DOMSelectors.button.addEventListener("click", () => {
+//     const printchinese = categories.filter((category) => category.cuisine === "chinese").forEach((category));
+// });
 
 // function divCreator(){
 //     DOMSelectors.container.insertAdjacentHTML(

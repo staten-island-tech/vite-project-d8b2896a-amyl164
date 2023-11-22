@@ -97,3 +97,22 @@ body.btn2{
   --secondary: var(--light-pink);
   --tertiary: var(--pink);
 }
+
+.btn1{
+  background-color: white;
+    border-radius: 10px;
+    border-color: black;
+  font-size: 3rem;
+}
+
+.btn2{
+  background-color: white;
+    border-radius: 10px;
+    border-color: black;
+  font-size: 3rem;
+}
+
+h2{
+  font-size: 3rem;
+  text-align: center;
+}
