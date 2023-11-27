@@ -5,7 +5,7 @@ html,
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: lightblue;
+    background-color: #c18eda;
 }
 
 .container {
@@ -34,12 +34,12 @@ html,
 
 .card {
     font-size: 3rem;
-    background-color: aliceblue;
+    background-color: #d6b4e7;
     padding: 2%;
     margin: 2rem 2rem;
-    border: 1px solid aliceblue;
+    border: 1px solid #d6b4e7;
     border-radius: 5px;
-    box-shadow: 10px 10px cornflowerblue;
+    box-shadow: 10px 10px #9744be;
     width: 450px;
     height: 40vh;
 }
@@ -52,14 +52,14 @@ html,
     border-radius: 5px;
 }
 .cardtitle {
-  background-color: lightblue;
+  background-color: #c18eda;
   font-size: 5rem;
   width: 140rem;
   text-align: center;
   margin: 6rem auto;
-  border: 3px solid midnightblue;
+  border: 3px solid #793698;
   border-radius: 5px;
-  box-shadow: 10px 10px cornflowerblue; 
+  box-shadow: 10px 10px #9744be; 
 }
 h3{
   border-radius: 5px;
@@ -99,16 +99,16 @@ body.btn2{
 }
 
 .btn1{
-  background-color: white;
+  background-color: var(--pink);
     border-radius: 10px;
-    border-color: black;
+    border-color: var(--dark-pink);
   font-size: 3rem;
 }
 
 .btn2{
-  background-color: white;
+  background-color: var(--blue);
     border-radius: 10px;
-    border-color: black;
+    border-color: var(--dark-blue);
   font-size: 3rem;
 }
 

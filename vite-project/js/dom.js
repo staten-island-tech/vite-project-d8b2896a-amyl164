@@ -12,6 +12,8 @@ const DOMSelectors ={
     mexico: document.querySelector(".mexico"),
     india: document.querySelector(".india"),
     italy: document.querySelector(".italy"),
+    btn1: document.querySelector(".btn1"),
+    btn2: document.querySelector(".btn2"),
 
 };
 

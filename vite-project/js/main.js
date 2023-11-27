@@ -148,8 +148,10 @@ DOMSelectors.italy.addEventListener("click", function(event){
     pee()
 });
 
-    
-    
-
-        
-  
+DOMSelectors.btn2.addEventListener("click", function(event){
+    event.preventDefault();
+    function girly () {
+        document.body.style.background = color;
+     } 
+     girly()
+})
