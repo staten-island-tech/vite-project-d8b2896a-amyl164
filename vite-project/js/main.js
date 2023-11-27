@@ -3,48 +3,29 @@ import {categories} from './cuisine'
 import { DOMSelectors } from "./dom";
 /* import {cuisine, price} from "./cuisine";
 console.log(cuisine, price) */
-
-function poopy (){
-    categories.forEach((x) => {const poop = 
-    `<div class="container">
-    <div class="card">
+function clearfields(){
+    DOMSelectors.container.innerHTML="";
+}
+function insertCards(arr){
+    //arr represents an array such as cuisine/menu items
+    arr.forEach((x) => {
+DOMSelectors.container.insertAdjacentHTML(
+    "beforeend",
+    `<div class="card">
         <h3 class = "name">${x.name}</h3>
         <img src="${x.pic}" class="cardimg">
         <h4 class = ${x.money}>Price</h4> 
-    </div>  
-</div>`
-DOMSelectors.container.insertAdjacentHTML(
-    "beforeend",
-    poop
+    </div> `
     
 )})};
-poopy()
-
+//set up initial menu on screen
+insertCards(categories)
+/* 
 DOMSelectors.china.addEventListener("click", function(event){
-    event.preventDefault();
-    function clearfields(){
-        DOMSelectors.container.innerHTML="";
-    }
-    clearfields()
-    function pee(){
-        const printchinese = categories.filter((category) => category.cuisine === "chinese");
-        printchinese.forEach((category)=> 
-    {const poop = 
-        `<div class="container">
-        <div class="card">
-            <h3 class = "name">${category.name}</h3>
-            <img src="${category.pic}" class="cardimg">
-            <h4 class = ${category.money}>Price</h4> 
-        </div>  
-    </div>`
-    DOMSelectors.container.insertAdjacentHTML(
-        "beforeend",
-        poop,
-        
-    )})}
-    pee()
+clearfields()
+const printchinese = categories.filter((category) => category.cuisine === "chinese");
+poopy(printchinese)
 });
-
 
 DOMSelectors.japan.addEventListener("click", function(event){
     event.preventDefault();
@@ -71,7 +52,6 @@ DOMSelectors.japan.addEventListener("click", function(event){
     pee()
 });
 
-
 DOMSelectors.mexico.addEventListener("click", function(event){
     event.preventDefault();
     function clearfields(){
@@ -96,7 +76,6 @@ DOMSelectors.mexico.addEventListener("click", function(event){
     )})}
     pee()
 });
-
 
 DOMSelectors.india.addEventListener("click", function(event){
     event.preventDefault();
@@ -146,12 +125,22 @@ DOMSelectors.italy.addEventListener("click", function(event){
         
     )})}
     pee()
-});
+}); */
 
-DOMSelectors.btn2.addEventListener("click", function(event){
-    event.preventDefault();
-    function girly () {
-        document.body.style.background = color;
-     } 
-     girly()
+//combine all buttons into one Nodelist/Array
+let buttons = document.querySelectorAll('button')
+
+// for each button we add anevent listener
+buttons.forEach((btn)=> btn.addEventListener("click", function(){
+    //get value/text content of button to be compared later
+    let type = btn.textContent.toLowerCase()
+    //filter the main array by the type of cuisine
+    let newArr = categories.filter((category) => category.cuisine === type)
+    clearfields()
+    //pass filtered array into insertcards to put on screen
+   insertCards(newArr)
+}))
+
+document.querySelector(".btn1").addEventListener("click", function () {
+    document.body.classList.add("btn1");
 })
