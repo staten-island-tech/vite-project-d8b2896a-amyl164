@@ -7,8 +7,11 @@ const DOMSelectors ={
     cardimg: document.querySelector(".cardimg"),
     name: document.querySelector(".name"),
     money: document.querySelector(".money"),
-    button: document.querySelectorAll(".btn"),
-
+    china: document.querySelector(".china"),
+    japan: document.querySelector(".japan"),
+    mexico: document.querySelector(".mexico"),
+    india: document.querySelector(".india"),
+    italy: document.querySelector(".italy"),
 
 };
 

@@ -20,13 +20,15 @@ DOMSelectors.container.insertAdjacentHTML(
 )})};
 poopy()
 
-DOMSelectors.button.addEventListener("click", function(event){
+DOMSelectors.china.addEventListener("click", function(event){
     event.preventDefault();
     function clearfields(){
-        document.container.innerHTML="";
+        DOMSelectors.container.innerHTML="";
     }
     clearfields()
-    const printchinese = categories.filter((category) => category.cuisine === "chinese").forEach((category)=> 
+    function pee(){
+        const printchinese = categories.filter((category) => category.cuisine === "chinese");
+        printchinese.forEach((category)=> 
     {const poop = 
         `<div class="container">
         <div class="card">
@@ -38,42 +40,116 @@ DOMSelectors.button.addEventListener("click", function(event){
     DOMSelectors.container.insertAdjacentHTML(
         "beforeend",
         poop,
-        printchinese
-        )})});
         
+    )})}
+    pee()
+});
+
+
+DOMSelectors.japan.addEventListener("click", function(event){
+    event.preventDefault();
+    function clearfields(){
+        DOMSelectors.container.innerHTML="";
+    }
+    clearfields()
+    function pee(){
+        const printjapanese = categories.filter((category) => category.cuisine === "japanese");
+        printjapanese.forEach((category)=> 
+    {const poop = 
+        `<div class="container">
+        <div class="card">
+            <h3 class = "name">${category.name}</h3>
+            <img src="${category.pic}" class="cardimg">
+            <h4 class = ${category.money}>Price</h4> 
+        </div>  
+    </div>`
+    DOMSelectors.container.insertAdjacentHTML(
+        "beforeend",
+        poop,
+        
+    )})}
+    pee()
+});
+
+
+DOMSelectors.mexico.addEventListener("click", function(event){
+    event.preventDefault();
+    function clearfields(){
+        DOMSelectors.container.innerHTML="";
+    }
+    clearfields()
+    function pee(){
+        const printmexican = categories.filter((category) => category.cuisine === "mexican");
+        printmexican.forEach((category)=> 
+    {const poop = 
+        `<div class="container">
+        <div class="card">
+            <h3 class = "name">${category.name}</h3>
+            <img src="${category.pic}" class="cardimg">
+            <h4 class = ${category.money}>Price</h4> 
+        </div>  
+    </div>`
+    DOMSelectors.container.insertAdjacentHTML(
+        "beforeend",
+        poop,
+        
+    )})}
+    pee()
+});
+
+
+DOMSelectors.india.addEventListener("click", function(event){
+    event.preventDefault();
+    function clearfields(){
+        DOMSelectors.container.innerHTML="";
+    }
+    clearfields()
+    function pee(){
+        const printindian = categories.filter((category) => category.cuisine === "indian");
+        printindian.forEach((category)=> 
+    {const poop = 
+        `<div class="container">
+        <div class="card">
+            <h3 class = "name">${category.name}</h3>
+            <img src="${category.pic}" class="cardimg">
+            <h4 class = ${category.money}>Price</h4> 
+        </div>  
+    </div>`
+    DOMSelectors.container.insertAdjacentHTML(
+        "beforeend",
+        poop,
+        
+    )})}
+    pee()
+});
+
+DOMSelectors.italy.addEventListener("click", function(event){
+    event.preventDefault();
+    function clearfields(){
+        DOMSelectors.container.innerHTML="";
+    }
+    clearfields()
+    function pee(){
+        const printitalian = categories.filter((category) => category.cuisine === "italian");
+        printitalian.forEach((category)=> 
+    {const poop = 
+        `<div class="container">
+        <div class="card">
+            <h3 class = "name">${category.name}</h3>
+            <img src="${category.pic}" class="cardimg">
+            <h4 class = ${category.money}>Price</h4> 
+        </div>  
+    </div>`
+    DOMSelectors.container.insertAdjacentHTML(
+        "beforeend",
+        poop,
+        
+    )})}
+    pee()
+});
+
+    
     
 
-
-// DOMSelectors.button.addEventListener("click", () => {
-//     const printchinese = categories.filter((category) => category.cuisine === "chinese").forEach((category));
-// });
-
-// function divCreator(){
-//     DOMSelectors.container.insertAdjacentHTML(
-//         "afterbegin",
         
-//         function insert(){
-//             categories.forEach((category) => {const poop = 
-//                 `<div id="container">
-//                     <h3 class = "name">${category.name}</h3>
-//                     <img src="${category.pic}" class="cardimg">
-//                     <h4 class = ${category.money}>Price</h4>  
-//             </div>`
-//         })},
-//         insert()
-//     )}
-//     divCreator()
-
-
-
-/* 
-const printchinese = category.filter((category)=>category.cuisine ==="chinese").forEach((category)=> console.log(category.name)); 
-
-const printjapanese = category.filter((category)=>category.cuisine ==="japanese").forEach((category)=> console.log(category.name)); 
-
-const printmexican = category.filter((category)=>category.cuisine ==="mexican").forEach((category)=> console.log(category.name)); 
-
-const printindian = category.filter((category)=>category.cuisine ==="indian").forEach((category)=> console.log(category.name)); 
-
-const printitalian = category.filter((category)=>category.cuisine ==="italian").forEach((category)=> console.log(category.name)); 
- */
+  
