@@ -141,6 +141,15 @@ buttons.forEach((btn)=> btn.addEventListener("click", function(){
    insertCards(newArr)
 }))
 
-document.querySelector(".btn1").addEventListener("click", function () {
-    document.body.classList.add("btn1");
-})
+
+document.querySelector(".theme").addEventListener("click", function() {
+    if(document.body.classList.contains("girl")){
+        document.body.classList.remove("girl");
+        document.body.classList.add("boy");
+    }
+    else{
+        document.body.classList.add("girl");
+        document.body.classList.remove("boy");
+    }
+});
+

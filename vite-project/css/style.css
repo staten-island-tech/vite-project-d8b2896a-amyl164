@@ -5,7 +5,7 @@ html,
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #c18eda;
+    background-color: var(--primary);
 }
 
 .container {
@@ -34,12 +34,12 @@ html,
 
 .card {
     font-size: 3rem;
-    background-color: #d6b4e7;
+    background-color: var(--secondary);
     padding: 2%;
     margin: 2rem 2rem;
-    border: 1px solid #d6b4e7;
+    border: 1px solid var(--secondary);
     border-radius: 5px;
-    box-shadow: 10px 10px #9744be;
+    box-shadow: 10px 10px var(--tertiary);
     width: 450px;
     height: 40vh;
 }
@@ -52,14 +52,14 @@ html,
     border-radius: 5px;
 }
 .cardtitle {
-  background-color: #c18eda;
+  background-color: var(--secondary);
   font-size: 5rem;
   width: 140rem;
   text-align: center;
   margin: 6rem auto;
-  border: 3px solid #793698;
+  border: 3px solid var(--tertiary);
   border-radius: 5px;
-  box-shadow: 10px 10px #9744be; 
+  box-shadow: 10px 10px var(--tertiary); 
 }
 h3{
   border-radius: 5px;
@@ -84,32 +84,27 @@ h4{
   --dark-pink: #c63287;
   --light-pink: #ff99da;
   --pink: #e366b1;
+
+
 }
 
-body.btn1{
-  --primary: var(--dark-blue);
+.theme{
+  background-color: white;
+    border-radius: 10px;
+    border-color: black;
+    font-size: 3rem;
+}
+
+ body.boy{
+  --primary: var(--blue);
   --secondary: var(--light-lightblue);
-  --tertiary: var(--blue);
+  --tertiary: var(--dark-blue);
 }
 
-body.btn2{
-  --primary: var(--dark-pink);
+body.girl{
+  --primary: var(--pink);
   --secondary: var(--light-pink);
-  --tertiary: var(--pink);
-}
-
-.btn1{
-  background-color: var(--pink);
-    border-radius: 10px;
-    border-color: var(--dark-pink);
-  font-size: 3rem;
-}
-
-.btn2{
-  background-color: var(--blue);
-    border-radius: 10px;
-    border-color: var(--dark-blue);
-  font-size: 3rem;
+  --tertiary: var(--dark-pink);
 }
 
 h2{
