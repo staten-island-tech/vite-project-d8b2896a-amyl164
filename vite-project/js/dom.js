@@ -13,6 +13,7 @@ const DOMSelectors ={
     india: document.querySelector(".india"),
     italy: document.querySelector(".italy"),
    theme: document.querySelector(".theme"),
+   btncontainer: document.querySelectorAll(".btncontainer"),
 
 };
 

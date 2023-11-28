@@ -128,7 +128,7 @@ DOMSelectors.italy.addEventListener("click", function(event){
 }); */
 
 //combine all buttons into one Nodelist/Array
-let buttons = document.querySelectorAll('button')
+let buttons = document.querySelectorAll(".china, .japan, .mexico, .india, .italy")
 
 // for each button we add anevent listener
 buttons.forEach((btn)=> btn.addEventListener("click", function(){
